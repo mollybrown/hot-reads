@@ -1,3 +1,7 @@
 <h1>Hot Reads</h1>
 
-<%= @links %>
+<% @hot_reads.each do |link| %>
+  <ul>
+    <li><%= link_to link.url %></li>
+  </ul>
+<% end %>

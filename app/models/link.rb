@@ -6,10 +6,4 @@ class Link
     end
   end
 
-  def self.top_read
-    HotReadsService.top_read.map do |raw_link|
-      new(raw_link)
-    end
-  end
-
 end
