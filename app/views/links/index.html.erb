@@ -1,7 +1,12 @@
 <h1>Hot Reads</h1>
 
-<% @hot_reads.each do |link| %>
-  <ul>
-    <li><%= link_to link.url %>, Read Count: <%= "#{link.reads}" %></li>
-  </ul>
-<% end %>
+<table class="table table-striped">
+  <% @hot_reads.each do |link| %>
+  <tbody>
+    <tr>
+      <td><%= link_to link.url %></td>
+      <td>Read Count: <%= "#{link.reads}" %></td>
+    </tr>
+  </tbody>
+  <% end %>
+</table>
