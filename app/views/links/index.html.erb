@@ -2,6 +2,6 @@
 
 <% @hot_reads.each do |link| %>
   <ul>
-    <li><%= link_to link.url %></li>
+    <li><%= link_to link.url %>, Read Count: <%= "#{link.reads}" %></li>
   </ul>
 <% end %>
